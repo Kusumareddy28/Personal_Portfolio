@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Hero3D from './components/Hero3D';
+import SkillsSection from './components/SkillsSection';
+import ExperienceSection from './pages/Experience';
+import ContactSection from './pages/Contact';
+import Quantum from './components/Quantum';
+import ProjectsSection from './pages/Projects';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="bg-blue-100">
+        <Navbar />
+        <Routes>
+          {/* Main Portfolio Route */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero3D />
+                <ProjectsSection />
+                <SkillsSection />
+                <ExperienceSection />
+                <ContactSection />
+              </>
+            }
+          />
+
+          {/* Quantum Computing Page */}
+          <Route path="/quantum" element={<Quantum />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
