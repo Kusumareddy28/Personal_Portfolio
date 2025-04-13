@@ -9,35 +9,35 @@ const experiences = [
     date: "Jan 2025 – Present",
     logo: "/assets/CSU_Logo.png",
     points: [
-      "Guided over 100 students in mastering C++, data structures, and algorithmic thinking.",
-      "Led debugging sessions and one-on-one mentorship to reinforce clean and optimized code practices.",
-      "Provided practical problem-solving strategies for recursion, memory management, and object-oriented programming."
+      "Assisting in teaching C++ courses, guiding students on data structures, algorithms, and object-oriented programming.",
+      "Mentoring students through practical problem-solving sessions and helping reinforce clean coding practices.",
+      "Supporting students in mastering recursion, memory management, and algorithm design."
     ],
-    skills: ["C++", "DSA", "Mentorship"]
+    skills: ["C++", "Teaching", "Mentorship"]
   },
   {
-    role: "Web Development Student Assistant",
+    role: "Lead Web Development Student Assistant",
     org: "SAP-UCC, California State University, Chico",
     date: "Dec 2023 – Present",
     logo: "/assets/SAP_Logo.png",
     points: [
-      "Designed and developed a dynamic e-commerce platform serving 5,000+ users using secure APIs.",
-      "Built a Swift-based iOS app with real-time backend integration.",
-      "Collaborated with international SAP teams to implement scalable, efficient components aligned with institutional goals."
+      "Owned development of reusable ReactJS components and Node.js APIs for a high-traffic educational platform serving 5,000+ users.",
+      "Integrated authentication, role-based access, and logging with JWT and secure database practices.",
+      "Optimized database queries and API response times to support cloud-based deployments, collaborating in Agile/Scrum teams."
     ],
-    skills: ["Swift", "API Design", "Team Collaboration"]
+    skills: ["ReactJS", "Node.js", "Agile"]
   },
   {
-    role: "Software Developer",
+    role: "Software Development Engineer",
     org: "Epsilon, India",
     date: "Feb 2022 – Aug 2023",
     logo: "/assets/Epsilon_Logo.png",
     points: [
-      "Developed high-performance C++ modules for an AI-driven analytics engine optimizing user behavior predictions.",
-      "Built a custom memory management layer to reduce latency and boost performance.",
-      "Integrated Python-based ML models with existing C++ architecture via Cython."
+      "Led microservices architecture using Java Spring Boot for a customer engagement platform with 10,000+ daily users.",
+      "Built time-series forecasting pipelines (ARIMA, LSTM, Prophet) improving planning accuracy by 20%.",
+      "Owned containerization of microservices using Docker, implemented CI/CD pipelines, and deployed applications on GCP Kubernetes."
     ],
-    skills: ["C++", "AI Integration", "Cython"]
+    skills: ["Java", "Spring Boot", "Microservices", "GCP"]
   },
   {
     role: "Programmer Analyst",
@@ -45,23 +45,23 @@ const experiences = [
     date: "Dec 2020 – Jan 2022",
     logo: "/assets/CTS_Logo.jpeg",
     points: [
-      "Built real-time analytics dashboards with ReactJS and WebSockets for live data updates.",
-      "Integrated CI/CD pipelines and automated tests to accelerate and harden the deployment cycle.",
-      "Ensured code quality and security compliance throughout application development."
+      "Developed backend REST APIs using Java Spring MVC and built real-time data aggregation pipelines for dashboards.",
+      "Implemented WebSocket-based communication and developed ReactJS frontend components for live updates.",
+      "Streamlined CI/CD deployment pipelines and enforced secure coding practices for system reliability."
     ],
-    skills: ["ReactJS", "CI/CD", "Security"]
+    skills: ["Java", "ReactJS", "CI/CD", "Security"]
   },
   {
-    role: "Intern Developer + Trainer",
+    role: "Software Development Engineer",
     org: "NearXture, India",
-    date: "Jan 2020 – Dec 2020",
+    date: "Aug 2019 – Dec 2020",
     logo: "/assets/nearxture.png",
     points: [
-      "Developed a full-stack learning platform using React, Node.js, Express, and MongoDB.",
-      "Created a custom coding curriculum and trained over 200 learners with hands-on sessions.",
-      "Launched a Swift-based iOS app as a prototype companion for students."
+      "Designed modular REST APIs using Spring Boot and implemented role-based access for an e-learning platform.",
+      "Contributed to frontend development using ReactJS to build dynamic curriculum and course management interfaces.",
+      "Focused on system robustness and backend query optimization for handling heavy load."
     ],
-    skills: ["Full Stack", "Education", "Swift"]
+    skills: ["Spring Boot", "ReactJS", "Backend Optimization"]
   },
   {
     role: "Software Development Intern",
@@ -69,13 +69,14 @@ const experiences = [
     date: "May 2019 – Aug 2019",
     logo: "/assets/zapcom.jpeg",
     points: [
-      "Built a responsive front-end chatbot UI using ReactJS and Material UI.",
-      "Collaborated in Agile sprints to deliver features for an AI-driven customer support system.",
-      "Optimized rendering performance and ensured accessibility across devices."
+      "Developed and optimized backend modules in C++ for internal tools, improving data processing efficiency and performance.",
+      "Collaborated in Agile sprints to deliver optimized features for system tools and internal analytics.",
+      "Ensured code maintainability and performance optimization across projects."
     ],
-    skills: ["ReactJS", "UI Design", "Agile"]
+    skills: ["C++", "Backend Development", "Agile"]
   }
 ];
+
 
 function ExperienceSection() {
   const timelineRef = useRef(null);
